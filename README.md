@@ -1,6 +1,6 @@
 # vue-offer-app
 
-This template should help get you started developing with Vue 3 in Vite.
+A Vue.js app which can be used to take user information for proper offers about wedding halls
 
 ## Recommended IDE Setup
 

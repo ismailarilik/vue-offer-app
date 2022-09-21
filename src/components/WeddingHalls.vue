@@ -1,0 +1,3 @@
+<template>
+  Wedding halls
+</template>

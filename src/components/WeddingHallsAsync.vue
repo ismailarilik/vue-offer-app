@@ -32,20 +32,9 @@
         <hr class="my-3">
         <!-- Brief -->
         <div class="container columns-2">
-          <div>
-            <div class="text-slate-400 text-sm">Yemekli Kapasite</div>
-            <div class="font-medium mt-1">400 Kişi</div>
-          </div>
-          <div>
-            <div class="text-slate-400 text-sm">Üyelere Özel Fiyat</div>
-            <div class="mt-1">
-              <div class="font-medium inline line-through">
-                180 TL
-              </div>
-              <button class="inline ml-2 font-medium text-rose-600">
-                Fiyat Al
-              </button>
-            </div>
+          <div v-for="briefItem in weddingHall.listingDataBrief" :key="briefItem.label">
+            <div class="text-slate-400 text-sm">{{ briefItem.label }}</div>
+            <div class="font-medium mt-1">{{ briefItem.value }}</div>
           </div>
         </div>
         <!-- Buttons -->

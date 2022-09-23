@@ -17,7 +17,7 @@ const router = createRouter({
       component: PriceOffer
     },
     {
-      path: '/thank-you',
+      path: '/wedding-halls/:id/thank-you',
       name: 'thank-you',
       component: ThankYou
     }

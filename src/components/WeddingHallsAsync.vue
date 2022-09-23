@@ -38,7 +38,7 @@
           </div>
         </div>
         <!-- Buttons -->
-        <div class="container columns-2 mt-3">
+        <div class="container columns-2 mt-3 font-medium">
           <div>
             <RouterLink
               to="#"

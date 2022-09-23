@@ -40,14 +40,20 @@
         <!-- Buttons -->
         <div class="container columns-2 mt-3">
           <div>
-            <button class="text-rose-600 border-rose-600 border rounded-full py-2 px-5 w-full font-medium">
+            <RouterLink
+              to="#"
+              class="text-rose-600 border-rose-600 border rounded-full py-2 w-full block text-center"
+            >
               Mekanı İncele
-            </button>
+            </RouterLink>
           </div>
           <div>
-            <button class="bg-rose-600 text-white rounded-full py-2 px-5 w-full font-medium">
+            <RouterLink
+              :to="`/wedding-halls/${ weddingHall.id }/offer`"
+              class="bg-rose-600 text-white rounded-full py-2 w-full block text-center"
+            >
               Ücretsiz Teklif Al
-            </button>
+            </RouterLink>
           </div>
         </div>
       </div>

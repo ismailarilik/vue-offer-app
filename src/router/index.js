@@ -12,7 +12,7 @@ const router = createRouter({
       component: WeddingHalls
     },
     {
-      path: '/offer',
+      path: '/wedding-halls/:id/offer',
       name: 'offer',
       component: PriceOffer
     },

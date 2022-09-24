@@ -38,7 +38,7 @@
       <select
         v-if="input.fieldType === 'select'"
         v-model="input.fieldValue"
-        class="rounded-full w-96 my-2 focus:ring-teal-500 focus:border-teal-500"
+        class="rounded-full w-96 my-2 focus:ring-secondary focus:border-secondary"
         :required="input.isRequired"
         :disabled="!input.isActive"
       >
@@ -49,7 +49,7 @@
       <textarea
         v-else-if="input.fieldType === 'textarea'"
         v-model="input.fieldValue"
-        class="rounded w-96 my-2 resize-none focus:ring-teal-500 focus:border-teal-500"
+        class="rounded w-96 my-2 resize-none focus:ring-secondary focus:border-secondary"
         :placeholder="input.fieldLabel"
         :required="input.isRequired"
         :disabled="!input.isActive"
@@ -59,7 +59,7 @@
         v-else
         :type="getInputFieldType(input.fieldType)"
         v-model="input.fieldValue"
-        class="rounded-full w-96 my-2 focus:ring-teal-500 focus:border-teal-500"
+        class="rounded-full w-96 my-2 focus:ring-secondary focus:border-secondary"
         :placeholder="input.fieldLabel"
         :required="input.isRequired"
         :disabled="!input.isActive"
@@ -67,7 +67,7 @@
     </div>
     <!-- Agreement -->
     <div class="flex items-center mt-2 mb-8">
-      <input type="checkbox" class="rounded align-middle text-teal-500 focus:ring-0 focus:ring-offset-0" id="agreement">
+      <input type="checkbox" class="rounded align-middle text-secondary focus:ring-0 focus:ring-offset-0" id="agreement">
       <label for="agreement" class="align-middle ml-2">
         <span class="underline">Kullanıcı sözleşmesi</span> ve <span class="underline">pazarlama izni</span> <br> metinlerini okudum ve kabul ediyorum.
       </label>
@@ -75,7 +75,7 @@
     <!-- Offer button -->
     <RouterLink
       :to="`/wedding-halls/${ weddingHall.id }/thank-you`"
-      class="bg-rose-600 text-white rounded-full py-2 mb-6 w-96 text-center font-medium"
+      class="bg-primary text-white rounded-full py-2 mb-6 w-96 text-center font-medium"
     >
       Ücretsiz Teklif Al
     </RouterLink>

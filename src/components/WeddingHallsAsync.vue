@@ -42,7 +42,7 @@
           <div>
             <RouterLink
               to="#"
-              class="text-rose-600 border-rose-600 border rounded-full py-2 w-full block text-center"
+              class="text-primary border-primary border rounded-full py-2 w-full block text-center"
             >
               Mekanı İncele
             </RouterLink>
@@ -50,7 +50,7 @@
           <div>
             <RouterLink
               :to="`/wedding-halls/${ weddingHall.id }/offer`"
-              class="bg-rose-600 text-white rounded-full py-2 w-full block text-center"
+              class="bg-primary text-white rounded-full py-2 w-full block text-center"
             >
               Ücretsiz Teklif Al
             </RouterLink>

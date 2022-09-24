@@ -11,7 +11,17 @@
       class="inline-block border-2 rounded pb-2"
       style="width: 400px;"
     >
-      <img :src="weddingHall.imageUrl" alt="Wedding hall image">
+      <!-- The image -->
+      <div class="relative">
+        <img :src="weddingHall.imageUrl" alt="Wedding hall image">
+        <!-- Discount image and text -->
+        <div v-if="weddingHall.hasDiscount" class="absolute top-0 left-4">
+          <img src="/union.svg" alt="Discount Union">
+          <div class="absolute h-min top-0 bottom-0 left-0 right-0 m-auto text-xs text-white text-center font-bold">
+            Üyelere Özel Fiyat
+          </div>
+        </div>
+      </div>
       <div class="p-3">
         <!-- Name line -->
         <div class="text-2xl font-medium">{{ weddingHall.name }}</div>

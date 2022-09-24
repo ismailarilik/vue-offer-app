@@ -1,5 +1,10 @@
 <script setup>
+  import { useFormInputModelsStore } from '@/stores/form-input-models'
   import { useRoute } from 'vue-router'
+
+  const inputModelsState = useFormInputModelsStore()
+  const inputModels = inputModelsState.models
+
   const route = useRoute()
   const weddingHallId = route.params.id
 
@@ -18,6 +23,10 @@
   </div>
   <div>
     {{ weddingHall.name }} sana en kısa sürede geri dönüş sağlayacak.
+  </div>
+  <!-- Form input values -->
+  <div v-for="input in inputModels" :key="input.id">
+    <span class="font-semibold">{{ input.fieldLabel }}:</span> {{ input.fieldValue }}
   </div>
 </div>
 </template>

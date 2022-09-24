@@ -1,5 +1,9 @@
 <script setup>
+  import { useFormInputModelsStore } from '@/stores/form-input-models'
   import { useRoute } from 'vue-router'
+
+  const inputModelsState = useFormInputModelsStore()
+
   const route = useRoute()
   const weddingHallId = route.params.id
 
@@ -12,6 +16,10 @@
   inputs.forEach(input => {
     input.infoRequestFormOptions.sort((a, b) => a.orderNum - b.orderNum)
   })
+
+  // Keep inputs state inside a global state object; it is necessary to get it in the next page
+  inputModelsState.setModels(inputs)
+  const inputModels = inputModelsState.models
 
   const getInputFieldType = fieldType => {
     if (fieldType === 'phone') {
@@ -26,7 +34,7 @@
     <!-- Wedding hall name -->
     <div class="font-medium text-xl mb-6">{{ weddingHall.name }} İletişim Formu</div>
     <!-- Inputs -->
-    <div v-for="input in inputs" :key="input.id">
+    <div v-for="input in inputModels" :key="input.id">
       <select
         v-if="input.fieldType === 'select'"
         v-model="input.fieldValue"
@@ -34,7 +42,7 @@
         :required="input.isRequired"
         :disabled="!input.isActive"
       >
-        <option v-for="option in input.infoRequestFormOptions" :key="option.id" :value="option.optionValue">
+        <option v-for="option in input.infoRequestFormOptions" :key="option.id" :value="option.optionText">
           {{ option.optionText }}
         </option>
       </select>

@@ -63,8 +63,12 @@
         <div class="text-2xl font-medium">{{ weddingHall.name }}</div>
         <!-- Score, comments and place -->
         <div class="text-slate-500">
-          <div class="inline mr-1">{{ weddingHall.score }} Puan</div>
-          <div class="inline">{{ weddingHall.commentCount }} Yorum</div>
+          <div class="inline-flex">
+            <img v-for="score in Math.floor(weddingHall.score)" :key="score" src="/star-full.svg">
+            <img v-for="score in Math.ceil(weddingHall.score % 1)" :key="score" src="/star-half.svg">
+            <img v-for="score in Math.floor(5 - weddingHall.score)" :key="score" src="/star-empty.svg">
+          </div>
+          <div class="inline ml-1">{{ weddingHall.commentCount }} Yorum</div>
           <div class="inline mx-3">&middot;</div>
           <div class="inline">{{ weddingHall.district.name }}</div>
         </div>

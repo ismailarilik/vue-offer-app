@@ -21,6 +21,21 @@
             Üyelere Özel Fiyat
           </div>
         </div>
+        <!-- Image and video counts -->
+        <div class="absolute top-4 right-4">
+          <div class="bg-white inline p-1 rounded">
+            <img src="/camera.svg" alt="Camera" class="inline">
+            <div class="inline text-slate-500 ml-1 text-xs font-medium">
+              {{ weddingHall.imageCount }}
+            </div>
+          </div>
+          <div class="bg-white inline p-1 rounded ml-4">
+            <img src="/video.svg" alt="Video" class="inline">
+            <div class="inline text-slate-500 ml-1 text-xs font-medium">
+              {{ weddingHall.videoCount }}
+            </div>
+          </div>
+        </div>
       </div>
       <div class="p-3">
         <!-- Name line -->

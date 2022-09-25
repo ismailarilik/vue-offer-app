@@ -36,6 +36,27 @@
             </div>
           </div>
         </div>
+        <!-- Quick response, review and year badges -->
+        <div class="absolute bottom-2 left-4">
+          <div v-if="weddingHall.badges.find(badge => badge.type === 'quick')" class="inline">
+            <img src="/quick-response-badge.svg" alt="Quick Response Badge" class="inline">
+            <div class="inline text-white ml-1 text-xs font-bold">
+              Hızlı Dönüş
+            </div>
+          </div>
+          <div v-if="weddingHall.badges.find(badge => badge.type === 'review')" class="inline ml-3">
+            <img src="/review-badge.svg" alt="Review Badge" class="inline">
+            <div class="inline text-white ml-1 text-xs font-bold">
+              İnceleme
+            </div>
+          </div>
+          <div v-if="weddingHall.badges.find(badge => badge.type === 'year')" class="inline ml-3">
+            <img src="/year-badge.svg" alt="Year Badge" class="inline">
+            <div class="inline text-white ml-1 text-xs font-bold">
+              {{ weddingHall.badges.find(badge => badge.type === 'year').value }}. Yıl
+            </div>
+          </div>
+        </div>
       </div>
       <div class="p-3">
         <!-- Name line -->

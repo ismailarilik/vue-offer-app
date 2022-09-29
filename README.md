@@ -2,6 +2,8 @@
 
 A Vue.js app which can be used to take user information for proper offers about wedding halls
 
+[https://ismailarilik.com/vue-offer-app/](https://ismailarilik.com/vue-offer-app/)
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
@@ -38,4 +40,12 @@ npm run test:unit
 
 ```sh
 npm run lint
+```
+
+## Deploy to GitHub Pages
+
+Configure `deploy.sh` and run:
+
+```sh
+sh deploy.sh
 ```

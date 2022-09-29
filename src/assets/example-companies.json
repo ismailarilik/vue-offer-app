@@ -1,0 +1,108 @@
+[
+  {
+    "id": 68592,
+    "name": "Düğün Köşkü",
+    "slug": "dugun-kosku",
+    "imageUrl": "https://picsum.photos/400/300",
+    "category": {
+      "id": 72,
+      "name": "Nikah Sonrası Yemeği",
+      "slug": "nikah-sonrasi-yemegi",
+      "categoryType": "venue",
+      "leadType": "pricing"
+    },
+    "city": {
+      "id": 1,
+      "name": "İstanbul",
+      "slug": "istanbul",
+      "status": true,
+      "isActive": true,
+      "isPublished": true
+    },
+    "district": {
+      "id": 58,
+      "name": "Beylikdüzü"
+    },
+    "listingDataBrief": [
+      {
+        "label": "Kapasite",
+        "value": "200-300 kişi"
+      },
+      {
+        "label": "Min. Yemekli",
+        "value": "200-300 TL"
+      }
+    ],
+    "score": 5,
+    "commentCount": 12,
+    "imageCount": 45,
+    "videoCount": 12,
+    "hasDiscount": true,
+    "badges": [
+      {
+        "type": "quick",
+        "value": null
+      },
+      {
+        "type": "year",
+        "value": 5
+      },
+      {
+        "type": "review",
+        "value": null
+      }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 68591,
+    "name": "Gelinlik Evi",
+    "slug": "gelinlik-evi",
+    "imageUrl": "https://picsum.photos/400/300?random=2",
+    "category": {
+      "id": 9,
+      "name": "Gelinlik",
+      "slug": "gelinlik",
+      "categoryType": "product",
+      "leadType": "appointment"
+    },
+    "city": {
+      "id": 1,
+      "name": "İstanbul",
+      "slug": "istanbul",
+      "status": true,
+      "isActive": true,
+      "isPublished": true
+    },
+    "district": {
+      "id": 189,
+      "name": "Ümraniye"
+    },
+    "listingDataBrief": [
+      {
+        "label": "Kapasite",
+        "value": "100-200 kişi"
+      },
+      {
+        "label": "Min. Yemekli",
+        "value": "100-200 TL"
+      }
+    ],
+    "score": 5,
+    "commentCount": 12,
+    "imageCount": 56,
+    "videoCount": 2,
+    "hasDiscount": false,
+    "badges": [
+      {
+        "type": "quick",
+        "value": null
+      },
+      {
+        "type": "year",
+        "value": 6
+      }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]

@@ -4,6 +4,8 @@ A Vue.js app which can be used to take user information for proper offers about 
 
 [https://ismailarilik.com/vue-offer-app/](https://ismailarilik.com/vue-offer-app/)
 
+![Screenshot](https://github.com/ismailarilik/vue-offer-app/blob/main/screenshot.png?raw=true)
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).

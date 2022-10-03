@@ -56,9 +56,9 @@
   {
     "id": 1,
     "categoryId": 0,
-    "fieldLabel": "Düğün Tarihi   ",
-    "providerLabel": "Düğün Tarihi",
-    "fieldName": "dugun_tarihi_1",
+    "fieldLabel": "Tarih",
+    "providerLabel": "Tarih",
+    "fieldName": "tarih",
     "fieldType": "date",
     "orderNum": 4,
     "fieldValue": "Lütfen Tarih Seçin",

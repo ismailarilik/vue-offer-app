@@ -1,8 +1,8 @@
 [
   {
     "id": 68592,
-    "name": "Düğün Köşkü",
-    "slug": "dugun-kosku",
+    "name": "Köşk",
+    "slug": "kosk",
     "imageUrl": "https://picsum.photos/400/300",
     "category": {
       "id": 72,

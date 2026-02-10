@@ -2,7 +2,7 @@
 
 A Vue.js app which can be used to take user information for proper offers about wedding halls
 
-[https://ismailarilik.com/vue-offer-app/](https://ismailarilik.com/vue-offer-app/)
+[https://ismailarilik.github.io/vue-offer-app/](https://ismailarilik.github.io/vue-offer-app/)
 
 ![Screenshot](https://github.com/ismailarilik/vue-offer-app/blob/main/screenshot.png?raw=true)
 
